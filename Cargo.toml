@@ -1,0 +1,22 @@
+[package]
+name = "discord-tui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossterm = "0.24.0"
+
+[dependencies.tokio]
+features = ["full"]
+version = "1.19.2"
+
+[dependencies.tokio-tungstenite]
+version = "0.17.1"
+features = ["native-tls"]
+
+[dependencies.tui]
+version = "0.18.0"
+default-features = false
+features = ["crossterm"]
